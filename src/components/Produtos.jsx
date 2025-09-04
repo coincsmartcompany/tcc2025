@@ -62,7 +62,10 @@ const Produtos = () => {
             <img src={informacao} alt="Produtos" className="w-[15px] h-[15px]" />
             <span className="text-white text-sm">Produtos</span>
           </div>
-          <div className="flex items-center gap-2 cursor-pointer">
+          <div
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={() => navigate('/equipe')}
+          >
             <img src={grupo} alt="Equipe" className="w-[15px] h-[15px]" />
             <span className="text-white text-sm">Equipe</span>
           </div>
@@ -110,7 +113,6 @@ const Produtos = () => {
       </div>
 
       <div className="px-6 py-4 grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6">
-
         <div className="flex flex-col items-center">
           <img src={esp32} alt="ESP32" className="w-[150px] h-[150px] object-cover" />
           <p className="font-nunito font-semibold mt-2 text-[#1a2e45]">ESP32</p>
