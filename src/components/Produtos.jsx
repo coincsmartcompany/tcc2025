@@ -69,7 +69,7 @@ const Produtos = () => {
             <img src={grupo} alt="Equipe" className="w-[15px] h-[15px]" />
             <span className="text-white text-sm">Equipe</span>
           </div>
-          <div className="flex items-center gap-2 cursor-pointer">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/artigo')}>
             <img src={artigo} alt="Artigo" className="w-[15px] h-[15px]" />
             <span className="text-white text-sm">Artigo</span>
           </div>
