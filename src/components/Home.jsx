@@ -14,7 +14,6 @@ const Home = () => {
   return (
     <div className="relative bg-[#F5F0E1] w-full min-h-screen">
       
-      {/* ===== VERSÃO MOBILE ===== */}
       <div className="md:hidden bg-[#F5F0E1]">
         <div className="flex justify-between items-center px-6 pt-5">
           <img src={Logo} alt="Logo" className="w-32 h-8" />
@@ -109,9 +108,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* ===== VERSÃO DESKTOP ===== */}
       <div className="hidden md:block bg-[#F5F0E1] min-h-screen">
-        {/* Header Desktop */}
+        
         <div className="flex justify-between items-center px-12 py-6 bg-[#F5F0E1]">
           <img src={Logo} alt="Logo" className="w-40 h-10 cursor-pointer" />
           
@@ -133,39 +131,17 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Imagem Principal Desktop com Botão */}
         <div className="flex justify-center mt-8 relative">
-          <div 
-            className="relative"
-            style={{
-              width: '90%',
-              maxWidth: '1200px',
-              height: '450px'
-            }}
-          >
-            <img 
-              src={Propaganda2} 
-              alt="Propaganda2" 
-              className="w-full h-full object-contain rounded-xl" 
-            />
+          <div className="relative"style={{width: '90%',maxWidth: '1200px',height: '450px'}}>
+            <img src={Propaganda2} alt="Propaganda2" className="w-full h-full object-contain rounded-xl" />
             
-            {/* Botão CONHEÇA AGORA! - Posicionado na parte rosa da imagem */}
-                       <button 
-              onClick={() => navigate('/passos')}
-              className="absolute bg-[#F5C2C2] rounded-[33px] px-12 py-4"
-              style={{
-                borderRadius: '33px',
-                right: '98px', // Aumentado de 120px para 150px
-                bottom: '70px'
-              }}
-            >
+            <button onClick={() => navigate('/passos')}className="absolute bg-[#F5C2C2] rounded-[33px] px-12 py-4"style={{borderRadius: '33px',right: '98px', bottom: '70px'}}>
               <span className="text-white font-bold text-lg">CONHEÇA AGORA!</span>
             </button>
 
           </div>
         </div>
 
-        {/* Diferencial Section Desktop */}
         <div className="bg-[#F5F0E1] py-20 px-12">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-[#1A2E45] text-4xl font-bold text-center mb-16">
@@ -187,7 +163,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Público Alvo Section Desktop - FUNDO ALTERADO */}
         <div className="bg-[#F5F0E1] py-20 px-12">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-[#1A2E45] text-4xl font-bold text-center mb-16">
@@ -195,7 +170,7 @@ const Home = () => {
             </h2>
             
             <div className="grid grid-cols-2 gap-12 items-center">
-              <div className="flex justify-center mt-16"> {/* Adicionado mt-8 para descer a imagem */}
+              <div className="flex justify-center mt-16"> 
                 <img src={Money} alt="Money" className="w-72 h-72" />
               </div>
               
@@ -208,17 +183,16 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Objetivo Section Desktop */}
-        <div className="bg-[#f4d9d1] rounded-t-3xl py-12 px-8 mx-auto max-w-4xl"> {/* Alterações aqui */}
+        <div className="bg-[#f4d9d1] rounded-t-3xl py-12 px-8 mx-auto max-w-4xl"> 
           <div className="text-center">
-            <h2 className="text-[#1A2E45] text-3xl font-bold mb-4"> {/* Texto reduzido */}
+            <h2 className="text-[#1A2E45] text-3xl font-bold mb-4"> 
               Tudo bem, é<br />SmartCoinc!
             </h2>
-            <p className="text-[#1A2E45] text-xl mb-6"> {/* Texto reduzido e margem ajustada */}
+            <p className="text-[#1A2E45] text-xl mb-6"> 
               As crianças amam. As famílias confiam.
             </p>
 
-            <div className="bg-white rounded-2xl p-6 max-w-md mx-auto mb-6"> {/* Largura e margem reduzidas */}
+            <div className="bg-white rounded-2xl p-6 max-w-md mx-auto mb-6">
               <img src={Certificado} alt="Certificado" className="w-40 h-14 mx-auto mb-3" />
               <p className="text-[#1A2E45] text-sm">
                 O programa kidSAFE Seal certifica a segurança de sites, aplicativos e produtos interativos voltados para crianças, garantindo que atendam a padrões independentes de segurança infantil.
@@ -227,9 +201,7 @@ const Home = () => {
 
             <div className="flex justify-center gap-4">
               <button
-                onClick={() => navigate('/passos')}
-                className="px-8 py-2 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg hover:bg-[#D94A7C] transition-colors" 
-              >
+                onClick={() => navigate('/passos')} className="px-8 py-2 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg hover:bg-[#D94A7C] transition-colors" >
                 NOSSOS ARTIGOS
               </button>
               <button className="px-8 py-2 bg-white rounded-2xl text-[#1CB0F6] font-bold text-lg border-2 border-[#1CB0F6] hover:bg-blue-50 transition-colors">

@@ -1,97 +1,197 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Logo from '../assets/Logo.png';
-import passos from '../assets/passos.png';
-import informacao from '../assets/informacao.png';
-import grupo from '../assets/grupo.png';
-import artigo from '../assets/artigo.png';
-import controlejogo from '../assets/controlejogo.png';
-import jogo from '../assets/jogo.png';
+import Logo from '../assets/logodomenu.png';
+import Passo from '../assets/passos.png';
+import Informacao from '../assets/informacao.png';
+import Grupo from '../assets/grupo.png';
+import Artigo from '../assets/artigo.png';
+import Controle from '../assets/controlejogo.png';
+import Logo1 from '../assets/Logo.png';
 
-const Jogos = () => {
+const ArtigoPage = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen w-full relative overflow-hidden">
-      {/* Imagem de fundo em tela cheia */}
-      <img 
-        src={jogo} 
-        alt="Jogo educativo" 
-        className="w-full h-full object-cover absolute inset-0 z-0"
-      />
-
-      {/* Header com logo e menu */}
-      <div className="flex justify-between items-center px-6 py-5 w-full z-50 relative">
-        <img
-          src={Logo}
-          alt="Logo"
-          className="w-[123px] h-[30px] cursor-pointer"
-          onClick={() => navigate('/')}
-        />
-        <div className="flex items-center gap-3">
-          <div
-            className="flex flex-col gap-1 cursor-pointer"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
+    <div className="bg-[#F5F0E1] min-h-screen w-full px-4 pt-6 relative">
+      {/* Mobile */}
+      <div className="md:hidden">
+        <div className="absolute top-[21px] left-[25px]">
+          <img src={Logo1} alt="Logo" className="w-[123px] h-[30px] cursor-pointer" onClick={() => navigate('/')} />
+        </div>
+      
+        <div className="absolute top-[21px] right-[25px] flex items-center gap-3 z-50">
+          <div className="flex flex-col gap-1 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)} >
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
+
           <div className="w-[33px] h-[33px] bg-gray-300 rounded-full"></div>
+        </div>
+
+        {menuOpen && (
+          <div 
+            className="absolute top-[60px] right-[25px] bg-[#1a2e45] rounded-[10px] z-40 flex flex-col justify-center px-3 py-4 space-y-3"
+            style={{ width: '160px', height: '200px' }}
+          >
+            <div className="flex items-center gap-2 cursor-pointer">
+              <img src={Passo} alt="Passo" className="w-[15px] h-[15px]" />
+              <span className="text-white text-sm">Passo a passo</span>
+            </div>
+
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/produtos')} >
+              <img src={Informacao} alt="Produtos" className="w-[15px] h-[15px]" />
+              <span className="text-white text-sm">Produtos</span>
+            </div>
+
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/equipe')}>
+              <img src={Grupo} alt="Equipe" className="w-[15px] h-[15px]" />
+              <span className="text-white text-sm">Equipe</span>
+            </div>
+
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/artigo')}>
+              <img src={Artigo} alt="Artigo" className="w-[15px] h-[15px]" />
+              <span className="text-white text-sm">Artigo</span>
+            </div>
+
+            <div className="flex items-center gap-2 cursor-pointer">
+              <img src={Controle} alt="Jogo" className="w-[15px] h-[15px]" />
+              <span className="text-white text-sm">Jogo</span>
+            </div>
+          </div>
+        )}
+
+        <div className="pt-28 pb-10 px-6">
+          <h1 className="text-3xl font-bold text-center text-[#1a2e45] mb-8">ARTIGOS CIENTÍFICOS</h1>
+          
+          <div className="space-y-12">
+            {/* Artigo 2012 */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <h2 className="text-xl font-bold text-[#EC5C8F] mb-4">2012</h2>
+              <h3 className="text-lg font-bold text-[#1a2e45] mb-4">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4">
+                <li>A educação financeira na infância desenvolve responsabilidade e consciência no uso do dinheiro ao longo da vida.</li>
+                <li>Família e escola são os principais agentes no processo de ensino e representam as hábitas financeiras saudáveis desde cedo.</li>
+              </ul>
+            </div>
+
+            {/* Artigo 2016 */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <h2 className="text-xl font-bold text-[#EC5C8F] mb-4">2016</h2>
+              <h3 className="text-lg font-bold text-[#1a2e45] mb-4">EDUCAÇÃO FINANCEIRA COMO PRÁTICA PEDAGÓGICA</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4">
+                <li>A educação financeira nas escolas forma cidadãos mais conscientes e preparados para lidar com o dinheiro em diferentes contextos da vida.</li>
+                <li>O professor tem um papel fundamental na aplicação de métodos financeiros no ambiente escolar, contribuindo para a formação integral dos estudantes.</li>
+              </ul>
+            </div>
+
+            {/* Artigo 2021 */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <h2 className="text-xl font-bold text-[#EC5C8F] mb-4">2021</h2>
+              <h3 className="text-lg font-bold text-[#1a2e45] mb-4">EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4">
+                <li>A educação financeira infantil é importante para orientar as crianças a gerenciar dinheiro de forma correta, desenvolvendo hábitos financeiros desde cedo.</li>
+                <li>O artigo explica os desafios de implementar esse ensino nas escolas e as estratégias para torná-lo mais eficaz e acessível às crianças.</li>
+              </ul>
+            </div>
+
+            {/* Artigo 2023 */}
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <h2 className="text-xl font-bold text-[#EC5C8F] mb-4">2023</h2>
+              <h3 className="text-lg font-bold text-[#1a2e45] mb-4">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4">
+                <li>O artigo destaca a importância da educação financeira para o desenvolvimento de habilidades que ajudam a tomar decisões conscientes e com responsabilidade.</li>
+                <li>Ele discute como a educação financeira contribui para uma sociedade mais informada e capaz de enfrentar desafios económicos pessoais e coletivos.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Menu suspenso */}
-      {menuOpen && (
-        <div
-          className="absolute top-[60px] right-6 bg-[#1a2e45] rounded-[10px] z-40 flex flex-col justify-center px-3 py-4 space-y-3 w-[160px] h-[200px]"
-        >
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/passos')}>
-            <img src={passos} alt="Passos" className="w-[15px] h-[15px]" />
-            <span className="text-white text-sm">Passo a passo</span>
-          </div>
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/produtos')}>
-            <img src={informacao} alt="Produtos" className="w-[15px] h-[15px]" />
-            <span className="text-white text-sm">Produtos</span>
-          </div>
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/equipe')}>
-            <img src={grupo} alt="Equipe" className="w-[15px] h-[15px]" />
-            <span className="text-white text-sm">Equipe</span>
-          </div>
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/artigos')}>
-            <img src={artigo} alt="Artigo" className="w-[15px] h-[15px]" />
-            <span className="text-white text-sm">Artigo</span>
-          </div>
-          <div className="flex items-center gap-2 cursor-pointer">
-            <img src={controlejogo} alt="Jogo" className="w-[15px] h-[15px]" />
-            <span className="text-white text-sm">Jogo</span>
+      {/* Desktop */}
+      <div className="hidden md:block bg-[#F5F0E1] min-h-screen">
+        <div className="fixed left-0 top-0 w-[350px] h-full bg-[#1A2E45] z-10 flex flex-col items-center pt-12">
+          <img src={Logo} alt="Logo" className="w-48 h-12 mb-8 cursor-pointer" onClick={() => navigate('/')}/>
+
+          <div className="w-80 h-px bg-white opacity-30 mb-8"></div>
+          
+          <div className="w-full mt-12 px-8 space-y-8">
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors">
+              <img src={Passo} alt="Passo" className="w-6 h-6" />
+              <span className="text-white text-lg font-medium">Passo a passo</span>
+            </div>
+
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/produtos')}>
+              <img src={Informacao} alt="Produtos" className="w-6 h-6" />
+              <span className="text-white text-lg font-medium">Produtos</span>
+            </div>
+
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/equipe')}>
+              <img src={Grupo} alt="Equipe" className="w-6 h-6" />
+              <span className="text-white text-lg font-medium">Equipe</span>
+            </div>
+
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/artigo')}>
+              <img src={Artigo} alt="Artigo" className="w-6 h-6" />
+              <span className="text-white text-lg font-medium">Artigo</span>
+            </div>
+
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors">
+              <img src={Controle} alt="Jogo" className="w-6 h-6" />
+              <span className="text-white text-lg font-medium">Jogo</span>
+            </div>
           </div>
         </div>
-      )}
+        
+        <div className="ml-[380px] mr-10 py-10">
+          <h1 className="text-4xl font-bold text-center text-[#1a2e45] mb-12">ARTIGOS CIENTÍFICOS</h1>
+          
+          <div className="space-y-10 max-w-4xl mx-auto">
+            {/* Artigo 2012 */}
+            <div className="bg-white p-8 rounded-3xl shadow-xl">
+              <h2 className="text-2xl font-bold text-[#EC5C8F] mb-4">2012</h2>
+              <h3 className="text-xl font-bold text-[#1a2e45] mb-6">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-3 text-lg pl-6">
+                <li>A educação financeira na infância desenvolve responsabilidade e consciência no uso do dinheiro ao longo da vida.</li>
+                <li>Família e escola são os principais agentes no processo de ensino e representam as hábitas financeiras saudáveis desde cedo.</li>
+              </ul>
+            </div>
 
-      {/* Texto "Corra, Colete e Aprenda: Seu Futuro Começa com Cada Moedinha!" */}
-      <div 
-        className="absolute z-30"
-        style={{
-          width: '304px',
-          height: '99px',
-          left: '36px',
-          top: '214px'
-        }}
-      >
-        <h1 
-          className="text-[#F5F0E1] font-extrabold text-[24px] leading-tight"
-          style={{
-            fontFamily: "'Nunito', sans-serif",
-            fontWeight: 800
-          }}
-        >
-          Corra, Colete e Aprenda: Seu Futuro Começa com Cada Moedinha!
-        </h1>
+            {/* Artigo 2016 */}
+            <div className="bg-white p-8 rounded-3xl shadow-xl">
+              <h2 className="text-2xl font-bold text-[#EC5C8F] mb-4">2016</h2>
+              <h3 className="text-xl font-bold text-[#1a2e45] mb-6">EDUCAÇÃO FINANCEIRA COMO PRÁTICA PEDAGÓGICA</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-3 text-lg pl-6">
+                <li>A educação financeira nas escolas forma cidadãos mais conscientes e preparados para lidar com o dinheiro em diferentes contextos da vida.</li>
+                <li>O professor tem um papel fundamental na aplicação de métodos financeiros no ambiente escolar, contribuindo para a formação integral dos estudantes.</li>
+              </ul>
+            </div>
+
+            {/* Artigo 2021 */}
+            <div className="bg-white p-8 rounded-3xl shadow-xl">
+              <h2 className="text-2xl font-bold text-[#EC5C8F] mb-4">2021</h2>
+              <h3 className="text-xl font-bold text-[#1a2e45] mb-6">EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-3 text-lg pl-6">
+                <li>A educação financeira infantil é importante para orientar as crianças a gerenciar dinheiro de forma correta, desenvolvendo hábitos financeiros desde cedo.</li>
+                <li>O artigo explica os desafios de implementar esse ensino nas escolas e as estratégias para torná-lo mais eficaz e acessível às crianças.</li>
+              </ul>
+            </div>
+
+            {/* Artigo 2023 */}
+            <div className="bg-white p-8 rounded-3xl shadow-xl">
+              <h2 className="text-2xl font-bold text-[#EC5C8F] mb-4">2023</h2>
+              <h3 className="text-xl font-bold text-[#1a2e45] mb-6">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA</h3>
+              <ul className="list-disc list-inside text-[#1a2e45] space-y-3 text-lg pl-6">
+                <li>O artigo destaca a importância da educação financeira para o desenvolvimento de habilidades que ajudam a tomar decisões conscientes e com responsabilidade.</li>
+                <li>Ele discute como a educação financeira contribui para uma sociedade mais informada e capaz de enfrentar desafios económicos pessoais e coletivos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Jogos;
+export default ArtigoPage;

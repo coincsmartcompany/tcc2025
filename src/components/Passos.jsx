@@ -18,23 +18,14 @@ const Passos = () => {
 
   return (
     <div className="bg-[#F5F0E1] min-h-screen w-full px-4 pt-6 relative">
-      
-      {/* ===== VERSÃO MOBILE ===== */}
+  
       <div className="md:hidden">
         <div className="absolute top-[21px] left-[25px]">
-          <img 
-            src={Logo} 
-            alt="Logo" 
-            className="w-[123px] h-[30px] cursor-pointer"
-            onClick={() => navigate('/')} 
-          />
+          <img src={Logo} alt="Logo" className="w-[123px] h-[30px] cursor-pointer" onClick={() => navigate('/')} />
         </div>
       
         <div className="absolute top-[21px] right-[25px] flex items-center gap-3 z-50">
-          <div 
-            className="flex flex-col gap-1 cursor-pointer" 
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
+          <div className="flex flex-col gap-1 cursor-pointer" onClick={() => setMenuOpen(!menuOpen)} >
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
@@ -79,12 +70,9 @@ const Passos = () => {
           <div className="mb-20">
             <div className="relative flex justify-center mb-8">
               <div className="absolute w-[200px] h-[200px] bg-[#EC5C8F] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] left-[43px] top-[10px]"></div>
-              <img 
-                src={Imagem1} 
-                alt="Passo 1" 
-                className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" 
-              />
+              <img src={Imagem1} alt="Passo 1" className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" />
             </div>
+
             <div className="text-center mx-4 mt-8">
               <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 1</h3>
               <h4 className="text-[#1a2e45] text-base mb-3">Ligue seu porquinho!</h4>
@@ -97,12 +85,9 @@ const Passos = () => {
           <div className="mb-20">
             <div className="relative flex justify-center mb-8">
               <div className="absolute w-[200px] h-[200px] bg-[#EC5C8F] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] left-[43px] top-[10px]"></div>
-              <img 
-                src={Imagem2} 
-                alt="Passo 2" 
-                className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" 
-              />
+              <img src={Imagem2} alt="Passo 2" className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" />
             </div>
+
             <div className="text-center mx-4 mt-8">
               <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 2</h3>
               <h4 className="text-[#1a2e45] text-base mb-3">Conecte e cadastra-se</h4>
@@ -115,12 +100,9 @@ const Passos = () => {
           <div className="mb-20">
             <div className="relative flex justify-center mb-8">
               <div className="absolute w-[200px] h-[200px] bg-[#EC5C8F] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] left-[43px] top-[10px]"></div>
-              <img 
-                src={Imagem3} 
-                alt="Passo 3" 
-                className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" 
-              />
+              <img src={Imagem3} alt="Passo 3" className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" />
             </div>
+
             <div className="text-center mx-4 mt-8">
               <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 3</h3>
               <h4 className="text-[#1a2e45] text-base mb-3">Deposite seu dinheiro</h4>
@@ -133,11 +115,7 @@ const Passos = () => {
           <div className="mb-20">
             <div className="relative flex justify-center mb-8">
               <div className="absolute w-[200px] h-[200px] bg-[#EC5C8F] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] left-[43px] top-[10px]"></div>
-              <img 
-                src={Imagem4} 
-                alt="Passo 4" 
-                className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" 
-              />
+              <img src={Imagem4} alt="Passo 4" className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" />
             </div>
             <div className="text-center mx-4 mt-8">
               <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 4</h3>
@@ -157,18 +135,14 @@ const Passos = () => {
           </div>
         </div>
       </div>
-
-      {/* ===== VERSÃO DESKTOP ===== */}
      
       <div className="hidden md:block bg-[#F5F0E1] min-h-screen">
-        {/* Quadrado lateral esquerdo com Logo2 */}
+       
         <div className="fixed left-0 top-0 w-[350px] h-full bg-[#1A2E45] z-10 flex flex-col items-center pt-12">
           <img src={Logo2} alt="Logo" className="w-48 h-12 mb-8 cursor-pointer" onClick={() => navigate('/')}/>
 
-          {/* Linha branca separadora */}
           <div className="w-80 h-px bg-white opacity-30 mb-8"></div>
           
-          {/* Menu lateral para desktop */}
           <div className="w-full mt-12 px-8 space-y-8">
             <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors">
               <img src={Passo} alt="Passo" className="w-6 h-6" />
@@ -197,10 +171,10 @@ const Passos = () => {
           </div>
         </div>
         
-        {/* Conteúdo Desktop Modificado - Ajustado com mais margem à esquerda */}
+        
         <div className="ml-[380px] mr-10 py-10">
           <div className="space-y-40 max-w-6xl mx-auto">
-            {/* Passo 1 - Imagem à esquerda, texto à direita */}
+           
             <div className="flex gap-16 items-center">
               <div className="relative flex-shrink-0">
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
@@ -219,15 +193,10 @@ const Passos = () => {
               </div>
             </div>
 
-            {/* Passo 2 - Imagem à direita, texto à esquerda */}
             <div className="flex gap-16 items-center flex-row-reverse">
               <div className="relative flex-shrink-0">
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
-                <img 
-                  src={Imagem2} 
-                  alt="Passo 2" 
-                  className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" 
-                />
+                <img src={Imagem2} alt="Passo 2" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
               <div className="max-w-md text-center">
                 <h3 className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 2</h3>
@@ -238,15 +207,10 @@ const Passos = () => {
               </div>
             </div>
 
-            {/* Passo 3 - Imagem à esquerda, texto à direita */}
             <div className="flex gap-16 items-center">
               <div className="relative flex-shrink-0">
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
-                <img 
-                  src={Imagem3} 
-                  alt="Passo 3" 
-                  className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" 
-                />
+                <img src={Imagem3} alt="Passo 3" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
               <div className="max-w-md text-center">
                 <h3 className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 3</h3>
@@ -257,15 +221,10 @@ const Passos = () => {
               </div>
             </div>
 
-            {/* Passo 4 - Imagem à direita, texto à esquerda */}
             <div className="flex gap-16 items-center flex-row-reverse">
               <div className="relative flex-shrink-0">
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
-                <img 
-                  src={Imagem4} 
-                  alt="Passo 4" 
-                  className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" 
-                />
+                <img src={Imagem4} alt="Passo 4" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
               <div className="max-w-md text-center">
                 <h3 className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 4</h3>
@@ -277,7 +236,6 @@ const Passos = () => {
             </div>
           </div>
 
-          {/* Vídeo - Centralizado com mais margem */}
           <div className="mt-40 mb-20 flex justify-center">
             <div className="w-full max-w-4xl h-96 bg-gray-300 rounded-2xl flex items-center justify-center shadow-lg">
               <div className="w-24 h-24 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer">
