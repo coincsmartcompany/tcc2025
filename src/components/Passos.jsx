@@ -60,7 +60,7 @@ const Passos = () => {
             </div>
 
             <div className="flex items-center gap-2 cursor-pointer">
-              <img src={Controle} alt="Jogo" className="w-[15px] h-[15px]" />
+              <img src={Controle} alt="Jogo" className="w-[15px] h-[15px]" onClick={() => navigate('/jogo')}/>
               <span className="text-white text-sm">Jogo</span>
             </div>
           </div>
@@ -164,7 +164,7 @@ const Passos = () => {
               <span className="text-white text-lg font-medium">Artigo</span>
             </div>
 
-            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors">
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/jogo')}>
               <img src={Controle} alt="Jogo" className="w-6 h-6" />
               <span className="text-white text-lg font-medium">Jogo</span>
             </div>

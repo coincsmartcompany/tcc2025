@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/logo2.png';
 import passos from '../assets/passos.png';
 import informacao from '../assets/informacao.png';
 import grupo from '../assets/grupo.png';
@@ -28,7 +28,7 @@ const Equipe = () => {
 
   return (
     <div className="bg-[#F5F0E1] min-h-screen w-full relative">
-      {/* ===== VERSÃO MOBILE ===== */}
+     
       <div className="md:hidden">
         <div className="flex justify-between items-center px-6 py-5 absolute top-0 left-0 w-full z-50">
           <img src={Logo} alt="Logo" className="w-[123px] h-[30px] cursor-pointer" onClick={() => navigate('/')} />
@@ -63,7 +63,7 @@ const Equipe = () => {
               <span className="text-white text-sm">Artigo</span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer">
-              <img src={controlejogo} alt="Jogo" className="w-[15px] h-[15px]" />
+              <img src={controlejogo} alt="Jogo" className="w-[15px] h-[15px]" onClick={() => navigate('/jogo')}/>
               <span className="text-white text-sm">Jogo</span>
             </div>
           </div>
@@ -89,27 +89,23 @@ const Equipe = () => {
                 Estudante do Ensino Médio no UNASP-SP, uma instituição reconhecida pela excelência no ensino.
               </div>
 
-              <div classNam3
-              e="flex gap-2 mt-4">
-                  <img src={linkedin} alt="LinkedIn" className="w-[30px] h-[30px] cursor-pointer" />
-                  <img src={github} alt="GitHub" className="w-[30px] h-[30px] cursor-pointer" />
-                  <img src={instagram} alt="Instagram" className="w-[30px] h-[30px] cursor-pointer" />
+              <div className="flex gap-2 mt-4">
+                <img src={linkedin} alt="LinkedIn" className="w-[30px] h-[30px] cursor-pointer" />
+                <img src={github} alt="GitHub" className="w-[30px] h-[30px] cursor-pointer" />
+                <img src={instagram} alt="Instagram" className="w-[30px] h-[30px] cursor-pointer" />
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* ===== VERSÃO DESKTOP ===== */}
       <div className="hidden md:block bg-[#F5F0E1] min-h-screen">
-        {/* Quadrado lateral esquerdo */}
+     
         <div className="fixed left-0 top-0 w-[350px] h-full bg-[#1A2E45] z-10 flex flex-col items-center pt-12">
           <img src={Logo2} alt="Logo" className="w-48 h-12 mb-6 cursor-pointer" onClick={() => navigate('/')}/>
           
-          {/* Linha separadora */}
           <div className="w-40 h-px bg-white opacity-30 mb-8"></div>
           
-          {/* Menu lateral para desktop */}
           <div className="w-full px-8 space-y-8">
             <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/passos')} >
               <img src={passos} alt="Passo" className="w-6 h-6" />
@@ -131,32 +127,33 @@ const Equipe = () => {
               <span className="text-white text-lg font-medium">Artigo</span>
             </div>
 
-            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors">
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/jogo')}>
               <img src={controlejogo} alt="Jogo" className="w-6 h-6" />
               <span className="text-white text-lg font-medium">Jogo</span>
             </div>
           </div>
         </div>
         
-        {/* Conteúdo Desktop */}
         <div className="ml-[380px] py-10 px-10">
-          {/* Título e subtítulo alinhados à esquerda e MAIS PARA BAIXO */}
-          <div className="text-left mb-16 mt-16">
-            <h1 className="text-[#1a2e45] text-4xl font-bold mb-4">NOSSA EQUIPE</h1>
-            <p className="text-[#1a2e45] text-xl">Conheça os membros da nossa equipe</p>
+     
+          <div className="text-left mb-32 mt-16 flex items-start"> 
+
+            <div className="w-3 h-24 bg-[#EC5C8F] mr-6 rounded-none"></div>
+            
+            <div>
+              <h1 className="text-[#1a2e45] text-4xl font-bold mb-4">NOSSA EQUIPE</h1>
+              <p className="text-[#1a2e45] text-xl">Conheça os membros da nossa equipe</p>
+            </div>
           </div>
           
-          {/* Grid de membros da equipe - cards lado a lado em uma única linha e CENTRALIZADOS */}
           <div className="flex justify-center gap-8">
             {membros.map((membro, i) => (
               <div key={i} className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center relative" style={{ width: '250px', height: '437px', flexShrink: 0 }}>
                 
-                {/* Foto do membro com borda rosa maior - 150x150 */}
                 <div className="absolute -top-16 rounded-full border-6 border-[#EC5C8F] overflow-hidden bg-white flex justify-center items-center" style={{ width: '150px', height: '150px' }}>
                   <img src={membro.img} alt="Membro" className="w-[130px] h-[130px] rounded-full object-cover" />
                 </div>
 
-                {/* Informações do membro */}
                 <div className="mt-28 text-center flex flex-col justify-between h-full">
                   <div>
                     <h2 className="text-[#1a2e45] text-xl font-bold mb-3">{membro.nome}</h2>
@@ -166,7 +163,6 @@ const Equipe = () => {
                     </p>
                   </div>
                   
-                  {/* Ícones de redes sociais */}
                   <div className="flex gap-3 mt-8 justify-center">
                     <img src={linkedin} alt="LinkedIn" className="w-7 h-7 cursor-pointer hover:opacity-80 transition-opacity" />
                     <img src={github} alt="GitHub" className="w-7 h-7 cursor-pointer hover:opacity-80 transition-opacity" />
