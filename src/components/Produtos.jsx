@@ -199,8 +199,7 @@ const Produtos = () => {
           </div>
      
           <div className="mt-20">
-            <h2 className="text-[#1a2e45] text-3xl font-bold mb-10 text-center">Componentes Utilizados</h2>
-            
+
             <div className="grid grid-cols-3 gap-8">
               <div className="flex flex-col items-center bg-white p-6 shadow-md">
                 <img src={esp32} alt="ESP32" className="w-[180px] h-[180px] object-contain mb-4" />

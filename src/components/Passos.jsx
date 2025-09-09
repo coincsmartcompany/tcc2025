@@ -185,8 +185,8 @@ const Passos = () => {
                 />
               </div>
               <div className="max-w-md text-center">
-                <h3 className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 1</h3>
-                <h4 className="text-[#1a2e45] text-2xl font-bold mb-6">Ligue seu porquinho!</h4>
+                <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 1</i>
+                <h4 className="text-[#1a2e45] text-2xl mb-6">Ligue seu porquinho!</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
                   Encontre o botão lateral e pressione para ligar o dispositivo. Pronto, seu porquinho já está acordado e pronto para ajudar você a economizar!
                 </p>
@@ -199,8 +199,8 @@ const Passos = () => {
                 <img src={Imagem2} alt="Passo 2" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
               <div className="max-w-md text-center">
-                <h3 className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 2</h3>
-                <h4 className="text-[#1a2e45] text-2xl font-bold mb-6">Conecte e cadastra-se</h4>
+                <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 2</i>
+                <h4 className="text-[#1a2e45] text-2xl mb-6">Conecte e cadastra-se</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
                   Ative o Bluetooth do seu celular, conecte ao porquinho e faça o cadastro no aplicativo. Em poucos toques, você já pode começar a usar.
                 </p>
@@ -213,8 +213,8 @@ const Passos = () => {
                 <img src={Imagem3} alt="Passo 3" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
               <div className="max-w-md text-center">
-                <h3 className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 3</h3>
-                <h4 className="text-[#1a2e45] text-2xl font-bold mb-6">Deposite seu dinheiro</h4>
+                <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 3</i>
+                <h4 className="text-[#1a2e45] text-2xl mb-6">Deposite seu dinheiro</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
                   Coloque o dinheiro na abertura superior do porquinho. Elle vai guardar tudinho com segurança!
                 </p>
@@ -227,8 +227,8 @@ const Passos = () => {
                 <img src={Imagem4} alt="Passo 4" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
               <div className="max-w-md text-center">
-                <h3 className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 4</h3>
-                <h4 className="text-[#1a2e45] text-2xl font-bold mb-6">Quer retirar o dinheiro?</h4>
+                <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 4</i>
+                <h4 className="text-[#1a2e45] text-2xl mb-6">Quer retirar o dinheiro?</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
                   É só abrir o compartimento que fica na parte de baixo. Mas lembre-se: economizar também é um superpoder!
                 </p>
