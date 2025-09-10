@@ -11,9 +11,15 @@ import Grupo from  '../assets/grupo.png';
 import Artigo from '../assets/artigo.png';
 import Controle from '../assets/controlejogo.png';
 import Logo2 from '../assets/logodomenu.png';
+import DarkMode from '../assets/dark-mode.png';
 
 const Passos = () => {
   const navigate = useNavigate();
+
+  const handleDarkModeClick = () => {
+    navigate('/passosdark');
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -31,7 +37,12 @@ const Passos = () => {
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
 
-          <div className="w-[33px] h-[33px] bg-gray-300 rounded-full"></div>
+          <img 
+            src={DarkMode} 
+            alt="Dark Mode" 
+            className="w-[33px] h-[33px] cursor-pointer" 
+            onClick={handleDarkModeClick}
+          />
         </div>
 
         {menuOpen && (
@@ -121,7 +132,7 @@ const Passos = () => {
               <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 4</h3>
               <h4 className="text-[#1a2e45] text-base mb-3">Quer retirar o dinheiro?</h4>
               <p className="text-[#1a2e45] text-[12px] font-normal max-w-[280px] mx-auto">
-                É só abrir o compartimento que fica na parte de baixo. Mas lembre-se: economizar também é um superpoder!
+                É só abrir o compartimento que fica na partede baixo. Mas lembre-se: economizar também é um superpoder!
               </p>
             </div>
           </div>

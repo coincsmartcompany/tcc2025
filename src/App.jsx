@@ -6,6 +6,8 @@ import Produtos from './components/Produtos';
 import Equipe from './components/Equipe';
 import Artigo from './components/Artigo';
 import Jogo from './components/Jogo';
+import HomeDark from './componentsDark/HomeDark';
+import PassosDark from './componentsDark/PassosDark';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/equipe" element={<Equipe />} /> 
           <Route path="/artigo" element={<Artigo />} /> 
           <Route path="/jogo" element={<Jogo />} /> 
+          <Route path="/dark" element={<HomeDark />} />
+          <Route path="/passosdark" element={<PassosDark />} />
         </Routes>
       </div>
     </Router>

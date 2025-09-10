@@ -7,6 +7,7 @@ import Grupo from '../assets/grupo.png';
 import Artigo from '../assets/artigo.png';
 import Controle from '../assets/controlejogo.png';
 import Logo1 from '../assets/Logo.png';
+import DarkMode from '../assets/dark-mode.png';
 
 const ArtigoPage = () => {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ const ArtigoPage = () => {
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
 
-          <div className="w-[33px] h-[33px] bg-gray-300 rounded-full"></div>
+          <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" />
         </div>
 
         {menuOpen && (
@@ -50,7 +51,7 @@ const ArtigoPage = () => {
               <span className="text-white text-sm">Equipe</span>
             </div>
 
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/artigo')}>
+            <div className="flex itemsCenter gap-2 cursor-pointer" onClick={() => navigate('/artigo')}>
               <img src={Artigo} alt="Artigo" className="w-[15px] h-[15px]" />
               <span className="text-white text-sm">Artigo</span>
             </div>
@@ -223,7 +224,6 @@ const ArtigoPage = () => {
             </div>
 
             <div className="relative" style={{ width: '280px', height: '422px' }}>
-              {/* Círculo com ano */}
               <div className="absolute -top-[43.5px] left-1/2 transform -translate-x-1/2 flex items-center justify-center z-10"
                    style={{ width: '84px', height: '87px', backgroundColor: '#EC5C8F', borderRadius: '50%' }}>
                 <span className="text-white font-bold text-xl">2023</span>

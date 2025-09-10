@@ -8,6 +8,7 @@ import Artigo from '../assets/artigo.png';
 import Controle from '../assets/controlejogo.png';
 import JogoMobile from '../assets/jogo.png';
 import JogoDesktop from '../assets/jogo2.png';
+import DarkMode from '../assets/dark-mode.png';
 
 const Jogo = () => {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ const Jogo = () => {
   return (
     <div className="min-h-screen w-full relative">
      
+      {/* Mobile View */}
       <div className="md:hidden bg-cover bg-center min-h-screen" style={{ backgroundImage: `url(${JogoMobile})` }}>
         <div className="absolute top-[21px] left-[25px]">
           <img src={Logo2} alt="Logo" className="w-[123px] h-[30px] cursor-pointer" onClick={() => navigate('/')} />
@@ -28,7 +30,7 @@ const Jogo = () => {
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
 
-          <div className="w-[33px] h-[33px] bg-gray-300 rounded-full"></div>
+          <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" />
         </div>
 
         {menuOpen && (
@@ -64,20 +66,21 @@ const Jogo = () => {
         )}
 
         <div className="pt-56 pb-10 px-6">
-    
+          {/* Texto "Corra, Colete e Aprenda" para mobile - mais para baixo */}
           <div className="w-[304px] h-[99px] mx-auto mb-12">
             <h2 className="text-[24px] font-nunito font-extrabold text-[#F5F0E1] text-center leading-tight">
               Corra, Colete e Aprenda: Seu Futuro Começa com Cada Moedinha!
             </h2>
           </div>
           
+          {/* Texto descritivo do jogo para mobile - mais para baixo */}
           <div className="w-[311px] h-[154px] mx-auto mb-16">
             <p className="text-[16px] font-nunito font-bold text-[#F5F0E1] text-center leading-tight">
-              Coin Running é um divertido jogo de corrida infinita estrelado pela criança-jogadora, que controla seu próprio porquinho-cofre! Enquanto avança por cenários coloridos, coleta moedas, evita gastos por impulso e aprende a economizar dinheiro.
+              Coin Running é um divertido jogo de corrida infinita estrelado pela criança-jogadora, que controla seu próprio porquinho-cofre! Enquanto avança por cenários coloridos, coleta moedas, evita gastos por impulse e aprende a economizar dinheiro.
             </p>
           </div>
           
-         
+          {/* Botão JOGAR */}
           <div className="flex justify-center">
             <button 
               className="bg-[#72B8C3] text-white w-[295px] h-[62px] rounded-[30px] font-palanquin-dark font-bold text-[24px]"
@@ -88,9 +91,9 @@ const Jogo = () => {
         </div>
       </div>
 
-      
+      {/* Desktop View com menu hamburguer */}
       <div className="hidden md:block bg-cover bg-center min-h-screen" style={{ backgroundImage: `url(${JogoDesktop})` }}>
-        
+        {/* Logo centralizada no desktop */}
         <div className="absolute top-[21px] left-1/2 transform -translate-x-1/2">
           <img src={Logo2} alt="Logo" className="w-[123px] h-[30px] cursor-pointer" onClick={() => navigate('/')} />
         </div>
@@ -102,7 +105,7 @@ const Jogo = () => {
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
 
-          <div className="w-[33px] h-[33px] bg-gray-300 rounded-full"></div>
+          <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" />
         </div>
 
         {menuOpen && (
@@ -138,27 +141,28 @@ const Jogo = () => {
         )}
 
         <div className="pt-48 pb-10 px-6">
-        
+          {/* Texto "Corra, Colete e Aprenda" para desktop - mais para baixo */}
           <div className="w-[672px] h-[88px] mx-auto mb-8">
             <h2 className="text-[32px] font-nunito font-extrabold text-[#F5F0E1] text-center leading-tight">
               Corra, Colete e Aprenda: Seu Futuro Começa com Cada Moedinha!
             </h2>
           </div>
           
-         
+          {/* Texto descritivo do jogo para desktop - mais para cima */}
           <div className="w-[760px] h-[108px] mx-auto mb-8">
             <p className="text-[20px] font-nunito font-bold text-[#F5F0E1] text-center leading-tight">
               Coin Running é um divertido jogo de corrida infinita estrelado pela criança-jogadora, que controla seu próprio porquinho-cofre! Enquanto avança por cenários coloridos, coleta moedas, evita gastos por impulso e aprende a economizar dinheiro.
             </p>
           </div>
           
-        
-          <div className="flex justify-center">
-            <button className="bg-[#72B8C3] text-white w-[295px] h-[62px] rounded-[30px] font-palanquin-dark font-bold text-[24px]">
+          {/* Botão JOGAR - mais para baixo */}
+          <div className="flex justify-center mt-12">
+            <button 
+              className="bg-[#72B8C3] text-white w-[295px] h-[62px] rounded-[30px] font-palanquin-dark font-bold text-[24px]"
+            >
               JOGAR
             </button>
           </div>
-
         </div>
       </div>
     </div>

@@ -14,6 +14,7 @@ import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 import instagram from '../assets/instagram.png';
 import Logo2 from '../assets/logodomenu.png';
+import DarkMode from '../assets/dark-mode.png';
 
 const Equipe = () => {
   const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Equipe = () => {
               <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
               <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             </div>
-            <div className="w-[33px] h-[33px] bg-gray-300 rounded-full"></div>
+            <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" />
           </div>
         </div>
 

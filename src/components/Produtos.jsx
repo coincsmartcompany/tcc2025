@@ -15,6 +15,7 @@ import grupo from '../assets/grupo.png';
 import artigo from '../assets/artigo.png';
 import controlejogo from '../assets/controlejogo.png';
 import Logo2 from '../assets/logodomenu.png';
+import DarkMode from '../assets/dark-mode.png';
 
 const Produtos = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Produtos = () => {
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
-          <div className="w-[33px] h-[33px] bg-gray-300 rounded-full"></div>
+          <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" />
         </div>
 
         {menuOpen && (
@@ -148,7 +149,7 @@ const Produtos = () => {
               <span className="text-white text-lg font-medium">Passo a passo</span>
             </div>
 
-            <div className="flex items-center gap-4 cursor-pointer py-3 bg-[#2a4365] rounded-lg px-4">
+            <div className="flex itemsCenter gap-4 cursor-pointer py-3 bg-[#2a4365] rounded-lg px-4">
               <img src={informacao} alt="Produtos" className="w-6 h-6" />
               <span className="text-white text-lg font-medium">Produtos</span>
             </div>

@@ -7,9 +7,14 @@ import Money from '../assets/money.png';
 import Carteira from '../assets/carteira.png';
 import Certificado from '../assets/kidsafe.png';
 import Propaganda2 from '../assets/PROPAGANDA2.png';
+import DarkMode from '../assets/dark-mode.png';
 
 const Home = () => {
   const navigate = useNavigate();
+
+  const handleDarkModeClick = () => {
+    navigate('/dark');
+  };
 
   return (
     <div className="relative bg-[#F5F0E1] w-full min-h-screen">
@@ -17,12 +22,20 @@ const Home = () => {
       <div className="md:hidden bg-[#F5F0E1]">
         <div className="flex justify-between items-center px-6 pt-5">
           <img src={Logo} alt="Logo" className="w-32 h-8" />
-          <button
-            onClick={() => navigate('/jogo')}
-            className="px-4 py-2 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] text-sm font-bold"
-          >
-            JOGUE AGORA!
-          </button>
+          <div className="flex items-center gap-3">
+            <img 
+              src={DarkMode} 
+              alt="Dark Mode" 
+              className="w-[33px] h-[33px] cursor-pointer"
+              onClick={handleDarkModeClick}
+            />
+            <button
+              onClick={() => navigate('/jogo')}
+              className="px-4 py-2 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] text-sm font-bold"
+            >
+              JOGUE AGORA!
+            </button>
+          </div>
         </div>
 
         <div className="mt-6 px-4 relative">
@@ -36,7 +49,7 @@ const Home = () => {
         <div className="mt-12 px-6 text-center">
           <h2 className="text-[#1a2e45] text-2xl font-bold mb-4">Diferencial do Projeto</h2>
           <p className="text-[#1a2e45] text-sm">
-            Une design lúdico com funcionalidades educativas, como desafios semanais e feedbacks personalizados, 
+            Une design lúdico com funcionalidades educativas, como desafios semanais and feedbacks personalizados, 
             promovendo o engajamento contínuo da criança no aprendizado financeiro de maneira prática e atrativa.
           </p>
         </div>
@@ -113,7 +126,7 @@ const Home = () => {
         <div className="flex justify-between items-center px-12 py-6 bg-[#F5F0E1]">
           <img src={Logo} alt="Logo" className="w-40 h-10 cursor-pointer" />
           
-          <div className="flex items-center gap-8">
+          <div className="flex itemsCenter gap-8">
             <nav className="flex gap-8">
               <span className="text-[#1A2E45] cursor-pointer hover:text-[#EC5C8F] transition-colors font-semibold">Início</span>
               <span className="text-[#1A2E45] cursor-pointer hover:text-[#EC5C8F] transition-colors font-semibold" onClick={() => navigate('/produtos')}>Produtos</span>
@@ -122,12 +135,20 @@ const Home = () => {
               <span className="text-[#1A2E45] cursor-pointer hover:text-[#EC5C8F] transition-colors font-semibold" onClick={() => navigate('/jogos')}>Jogos</span>
             </nav>
             
-            <button
-              onClick={() => navigate('/jogo')}
-              className="px-6 py-3 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] font-bold hover:bg-[#D94A7C] transition-colors"
-            >
-              JOGUE AGORA!
-            </button>
+            <div className="flex items-center gap-4">
+              <img 
+                src={DarkMode} 
+                alt="Dark Mode" 
+                className="w-[33px] h-[33px] cursor-pointer"
+                onClick={handleDarkModeClick}
+              />
+              <button
+                onClick={() => navigate('/jogo')}
+                className="px-6 py-3 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] font-bold hover:bg-[#D94A7C] transition-colors"
+              >
+                JOGUE AGORA!
+              </button>
+            </div>
           </div>
         </div>
 
@@ -151,7 +172,7 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-[#1A2E45] text-lg leading-relaxed">
-                  Une design lúdico com funcionalidades educativas, como desafios semanais e feedbacks personalizados, 
+                  Une design lúdico com funcionalidades educativas, como desafios semanais and feedbacks personalizados, 
                   promovendo o engajamento contínuo da criança no aprendizado financeiro de maneira prática e atrativa.
                 </p>
               </div>
@@ -196,7 +217,7 @@ const Home = () => {
               <img src={Certificado} alt="Certificado" className="w-40 h-14 mx-auto mb-3" />
               <p className="text-[#1A2E45] text-sm">
                 O programa kidSAFE Seal certifica a segurança de sites, aplicativos e produtos interativos voltados para crianças, garantindo que atendam a padrões independentes de segurança infantil.
-              </p>
+            </p>
             </div>
 
             <div className="flex justify-center gap-4">
