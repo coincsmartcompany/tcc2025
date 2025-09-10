@@ -58,7 +58,7 @@ const ProdutosDark = () => {
               <span className="text-white text-sm">Produtos</span>
             </div>
             <div
-              className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/equipe')}
+              className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/equipedark')}
             >
               <img src={grupo} alt="Equipe" className="w-[15px] h-[15px]" />
               <span className="text-white text-sm">Equipe</span>
@@ -142,7 +142,7 @@ const ProdutosDark = () => {
       <div className="hidden md:block bg-[#0B1523] min-h-screen">
       
         <div className="fixed left-0 top-0 w-[350px] h-full bg-[#1A2E45] z-10 flex flex-col items-center pt-12">
-          <img src={Logo2} alt="Logo" className="w-48 h-12 mb-6 cursor-pointer" onClick={() => navigate('/')}/>
+          <img src={Logo2} alt="Logo" className="w-48 h-12 mb-6 cursor-pointer" onClick={() => navigate('/dark')}/>
    
           <div className="w-40 h-px bg-white opacity-30 mb-8"></div>
           

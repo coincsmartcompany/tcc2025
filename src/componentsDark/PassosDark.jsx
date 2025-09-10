@@ -12,6 +12,7 @@ import Artigo from '../assets/artigo.png';
 import Controle from '../assets/controlejogo.png';
 import Logo2 from '../assets/logo2.png';
 import DarkMode from '../assets/light-mode.png';
+import Sol from '../assets/sol.png'; // Importando o ícone de sol
 
 const PassosDark = () => {
   const navigate = useNavigate();
@@ -150,7 +151,7 @@ const PassosDark = () => {
       <div className="hidden md:block bg-[#0B1523] min-h-screen">
        
         <div className="fixed left-0 top-0 w-[350px] h-full bg-[#1A2E45] z-10 flex flex-col items-center pt-12">
-          <img src={Logo2} alt="Logo" className="w-48 h-12 mb-8 cursor-pointer" onClick={() => navigate('/')}/>
+          <img src={Logo2} alt="Logo" className="w-48 h-12 mb-8 cursor-pointer" onClick={() => navigate('/dark')}/>
 
           <div className="w-80 h-px bg-white opacity-30 mb-8"></div>
           
@@ -178,6 +179,14 @@ const PassosDark = () => {
             <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/jogo')}>
               <img src={Controle} alt="Jogo" className="w-6 h-6" />
               <span className="text-white text-lg font-medium">Jogo</span>
+            </div>
+
+            {/* Botão Sol adicionado aqui - sem texto, apenas ícone */}
+            <div 
+              className="flex items-center justify-center cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg transition-colors"
+              onClick={handleLightModeClick}
+            >
+              <img src={Sol} alt="Modo Claro" className="w-8 h-8" />
             </div>
           </div>
         </div>

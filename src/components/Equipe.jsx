@@ -138,6 +138,7 @@ const Equipe = () => {
               <img src={controlejogo} alt="Jogo" className="w-6 h-6" />
               <span className="text-white text-lg font-medium">Jogo</span>
             </div>
+            
           </div>
         </div>
         

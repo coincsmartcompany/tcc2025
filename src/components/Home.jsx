@@ -23,16 +23,8 @@ const Home = () => {
         <div className="flex justify-between items-center px-6 pt-5">
           <img src={Logo} alt="Logo" className="w-32 h-8" />
           <div className="flex items-center gap-3">
-            <img 
-              src={DarkMode} 
-              alt="Dark Mode" 
-              className="w-[33px] h-[33px] cursor-pointer"
-              onClick={handleDarkModeClick}
-            />
-            <button
-              onClick={() => navigate('/jogo')}
-              className="px-4 py-2 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] text-sm font-bold"
-            >
+            <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer" onClick={handleDarkModeClick}/>
+            <button onClick={() => navigate('/jogo')} className="px-4 py-2 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] text-sm font-bold">
               JOGUE AGORA!
             </button>
           </div>
@@ -108,13 +100,10 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col items-center gap-4 mt-6">
-          <button
-            onClick={() => navigate('/passos')}
-            className="w-full max-w-xs h-16 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg"
-          >
+          <button onClick={() => navigate('/artigo')} className="w-full max-w-xs h-16 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg" >
             NOSSOS ARTIGOS
           </button>
-          <button className="w-full max-w-xs h-16 bg-white rounded-2xl text-[#1CB0F6] font-bold text-lg border border-[#1CB0F6]">
+          <button onClick={() => navigate('/equipe')} className="w-full max-w-xs h-16 bg-white rounded-2xl text-[#1CB0F6] font-bold text-lg border border-[#1CB0F6]">
             NOSSA EQUIPE
           </button>
         </div>
@@ -132,20 +121,11 @@ const Home = () => {
               <span className="text-[#1A2E45] cursor-pointer hover:text-[#EC5C8F] transition-colors font-semibold" onClick={() => navigate('/produtos')}>Produtos</span>
               <span className="text-[#1A2E45] cursor-pointer hover:text-[#EC5C8F] transition-colors font-semibold" onClick={() => navigate('/artigos')}>Artigos</span>
               <span className="text-[#1A2E45] cursor-pointer hover:text-[#EC5C8F] transition-colors font-semibold" onClick={() => navigate('/equipe')}>Equipe</span>
-              <span className="text-[#1A2E45] cursor-pointer hover:text-[#EC5C8F] transition-colors font-semibold" onClick={() => navigate('/jogos')}>Jogos</span>
             </nav>
             
             <div className="flex items-center gap-4">
-              <img 
-                src={DarkMode} 
-                alt="Dark Mode" 
-                className="w-[33px] h-[33px] cursor-pointer"
-                onClick={handleDarkModeClick}
-              />
-              <button
-                onClick={() => navigate('/jogo')}
-                className="px-6 py-3 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] font-bold hover:bg-[#D94A7C] transition-colors"
-              >
+              <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer" onClick={handleDarkModeClick}/>
+              <button onClick={() => navigate('/jogo')} className="px-6 py-3 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] font-bold hover:bg-[#D94A7C] transition-colors">
                 JOGUE AGORA!
               </button>
             </div>
@@ -221,11 +201,10 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center gap-4">
-              <button
-                onClick={() => navigate('/passos')} className="px-8 py-2 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg hover:bg-[#D94A7C] transition-colors" >
+              <button onClick={() => navigate('/artigo')} className="px-8 py-2 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg hover:bg-[#D94A7C] transition-colors" >
                 NOSSOS ARTIGOS
               </button>
-              <button className="px-8 py-2 bg-white rounded-2xl text-[#1CB0F6] font-bold text-lg border-2 border-[#1CB0F6] hover:bg-blue-50 transition-colors">
+              <button onClick={() => navigate('/equipe')} className="px-8 py-2 bg-white rounded-2xl text-[#1CB0F6] font-bold text-lg border-2 border-[#1CB0F6] hover:bg-blue-50 transition-colors">
                 NOSSA EQUIPE
               </button>
             </div>

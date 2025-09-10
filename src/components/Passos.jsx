@@ -12,6 +12,7 @@ import Artigo from '../assets/artigo.png';
 import Controle from '../assets/controlejogo.png';
 import Logo2 from '../assets/logodomenu.png';
 import DarkMode from '../assets/dark-mode.png';
+import Sol from '../assets/sol.png'; 
 
 const Passos = () => {
   const navigate = useNavigate();
@@ -37,12 +38,7 @@ const Passos = () => {
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
 
-          <img 
-            src={DarkMode} 
-            alt="Dark Mode" 
-            className="w-[33px] h-[33px] cursor-pointer" 
-            onClick={handleDarkModeClick}
-          />
+          <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer" onClick={handleDarkModeClick}/>
         </div>
 
         {menuOpen && (
@@ -179,9 +175,13 @@ const Passos = () => {
               <img src={Controle} alt="Jogo" className="w-6 h-6" />
               <span className="text-white text-lg font-medium">Jogo</span>
             </div>
+
+            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={handleDarkModeClick}>
+              <img src={Sol} alt="Modo Claro" className="w-6 h-6" />
+          
+            </div>
           </div>
         </div>
-        
         
         <div className="ml-[380px] mr-10 py-10">
           <div className="space-y-40 max-w-6xl mx-auto">
