@@ -19,6 +19,11 @@ import DarkMode from '../assets/dark-mode.png';
 
 const Produtos = () => {
   const navigate = useNavigate();
+
+  const handleDarkModeClick = () => {
+    navigate('/produtosdark');
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -37,7 +42,7 @@ const Produtos = () => {
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
           </div>
-          <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" />
+          <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" onClick={handleDarkModeClick} />
         </div>
 
         {menuOpen && (

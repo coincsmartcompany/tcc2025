@@ -55,12 +55,12 @@ const PassosDark = () => {
               <span className="text-white text-sm">Passo a passo</span>
             </div>
 
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/produtos')} >
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/produtosdark')} >
               <img src={Informacao} alt="Produtos" className="w-[15px] h-[15px]" />
               <span className="text-white text-sm">Produtos</span>
             </div>
 
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/equipe')}>
+            <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/equipedark')}>
               <img src={Grupo} alt="Equipe" className="w-[15px] h-[15px]" />
               <span className="text-white text-sm">Equipe</span>
             </div>

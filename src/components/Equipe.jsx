@@ -18,13 +18,19 @@ import DarkMode from '../assets/dark-mode.png';
 
 const Equipe = () => {
   const navigate = useNavigate();
+
+    
+  const handleLightModeClick = () => {
+    navigate('/equipedark');
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const membros = [
     { img: alex, nome: 'Alexandre Henrique', cargo: 'líder de design' },
-    { img: duda, nome: 'Eduarda Moraes', cargo: 'game developer' },
+    { img: duda, nome: 'Eduarda\nMoraes', cargo: 'game developer' },
     { img: gi, nome: 'Giovanna Scalzone', cargo: 'líder de design' },
-    { img: lara, nome: 'Lara Beatriz', cargo: 'web developer' },
+    { img: lara, nome: 'Lara\nBeatriz', cargo: 'web developer' },
   ];
 
   return (
@@ -39,7 +45,7 @@ const Equipe = () => {
               <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
               <div className="w-[25px] h-[3px] bg-[#EC5C8F]"></div>
             </div>
-            <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px]" />
+            <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer" onClick={handleLightModeClick} />
           </div>
         </div>
 
@@ -78,7 +84,7 @@ const Equipe = () => {
                 <img src={membro.img} alt="Membro" className="w-[75px] h-[75px] rounded-full" />
               </div>
 
-              <div className="text-center font-nunito font-bold mt-[60px]" style={{ width: `${membro.nomeW}px`, height: `${membro.nomeH}px`, fontSize: '20px' }}>
+              <div className="text-center font-nunito font-bold mt-[60px] whitespace-pre-line" style={{ width: `${membro.nomeW}px`, height: `${membro.nomeH}px`, fontSize: '20px' }}>
                 {membro.nome}
               </div>
 
@@ -157,7 +163,7 @@ const Equipe = () => {
 
                 <div className="mt-28 text-center flex flex-col justify-between h-full">
                   <div>
-                    <h2 className="text-[#1a2e45] text-xl font-bold mb-3">{membro.nome}</h2>
+                    <h2 className="text-[#1a2e45] text-xl font-bold mb-3 whitespace-pre-line">{membro.nome}</h2>
                     <p className="text-[#EC5C8F] text-base mb-6">{membro.cargo}</p>
                     <p className="text-[#1a2e45] text-sm leading-relaxed px-2">
                       Estudante do Ensino Médio no UNASP-SP, uma instituição reconhecida pela excelência no ensino.

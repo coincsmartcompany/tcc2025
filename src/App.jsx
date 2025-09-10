@@ -8,6 +8,8 @@ import Artigo from './components/Artigo';
 import Jogo from './components/Jogo';
 import HomeDark from './componentsDark/HomeDark';
 import PassosDark from './componentsDark/PassosDark';
+import ProdutosDark from './componentsDark/ProdutosDark';
+import EquipeDark from './componentsDark/EquipeDark';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/jogo" element={<Jogo />} /> 
           <Route path="/dark" element={<HomeDark />} />
           <Route path="/passosdark" element={<PassosDark />} />
+          <Route path="/produtosdark" element={<ProdutosDark />} /> 
+          <Route path="/equipedark" element={<EquipeDark />} /> 
         </Routes>
       </div>
     </Router>
