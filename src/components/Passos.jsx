@@ -26,6 +26,7 @@ const Passos = () => {
   return (
     <div className="bg-[#F5F0E1] min-h-screen w-full px-4 pt-6 relative">
   
+      {/* Mobile */}
       <div className="md:hidden">
         <div className="absolute top-[21px] left-[25px]">
           <img src={Logo} alt="Logo" className="w-[123px] h-[30px] cursor-pointer" onClick={() => navigate('/')} />
@@ -143,6 +144,7 @@ const Passos = () => {
         </div>
       </div>
      
+      {/* Desktop */}
       <div className="hidden md:block bg-[#F5F0E1] min-h-screen">
        
         <div className="fixed left-0 top-0 w-[350px] h-full bg-[#1A2E45] z-10 flex flex-col items-center pt-12">
@@ -178,24 +180,20 @@ const Passos = () => {
 
             <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={handleDarkModeClick}>
               <img src={Sol} alt="Modo Claro" className="w-6 h-6" />
-          
             </div>
           </div>
         </div>
         
         <div className="ml-[380px] mr-10 py-10">
           <div className="space-y-40 max-w-6xl mx-auto">
-           
+
+            {/* PASSOS Desktop ajustados */}
             <div className="flex gap-16 items-center">
               <div className="relative flex-shrink-0">
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
-                <img 
-                  src={Imagem1} 
-                  alt="Passo 1" 
-                  className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" 
-                />
+                <img src={Imagem1} alt="Passo 1" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
-              <div className="max-w-md text-center">
+              <div className="max-w-md text-center ml-54"> {/* Passo 1 mais pra direita */}
                 <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 1</i>
                 <h4 className="text-[#1a2e45] text-2xl mb-6">Ligue seu porquinho!</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
@@ -209,7 +207,7 @@ const Passos = () => {
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
                 <img src={Imagem2} alt="Passo 2" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
-              <div className="max-w-md text-center">
+              <div className="max-w-md text-center mr-54"> {/* Passo 2 mais pra esquerda */}
                 <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 2</i>
                 <h4 className="text-[#1a2e45] text-2xl mb-6">Conecte e cadastra-se</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
@@ -223,7 +221,7 @@ const Passos = () => {
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
                 <img src={Imagem3} alt="Passo 3" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
-              <div className="max-w-md text-center">
+              <div className="max-w-md text-center ml-54"> {/* Passo 3 mais pra direita */}
                 <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 3</i>
                 <h4 className="text-[#1a2e45] text-2xl mb-6">Deposite seu dinheiro</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
@@ -237,7 +235,7 @@ const Passos = () => {
                 <div className="absolute w-[400px] h-[400px] bg-[#EC5C8F] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] left-6 top-4"></div>
                 <img src={Imagem4} alt="Passo 4" className="w-[400px] h-[400px] rounded-tl-[30px] rounded-tr-[70px] rounded-br-[30px] rounded-bl-[30px] relative z-10" />
               </div>
-              <div className="max-w-md text-center">
+              <div className="max-w-md text-center mr-54"> {/* Passo 4 mais pra esquerda */}
                 <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 4</i>
                 <h4 className="text-[#1a2e45] text-2xl mb-6">Quer retirar o dinheiro?</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
@@ -245,14 +243,7 @@ const Passos = () => {
                 </p>
               </div>
             </div>
-          </div>
 
-          <div className="mt-40 mb-20 flex justify-center">
-            <div className="w-full max-w-4xl h-96 bg-gray-300 rounded-2xl flex items-center justify-center shadow-lg">
-              <div className="w-24 h-24 bg-white bg-opacity-80 rounded-full flex items-center justify-center shadow-md hover:scale-110 transition-transform cursor-pointer">
-                <div className="w-0 h-0 border-t-14 border-b-14 border-l-20 border-transparent border-l-gray-600 ml-2"></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
