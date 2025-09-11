@@ -19,6 +19,7 @@ const Home = () => {
   return (
     <div className="relative bg-[#F5F0E1] w-full min-h-screen">
       
+      {/* MOBILE */}
       <div className="md:hidden bg-[#F5F0E1]">
         <div className="flex justify-between items-center px-6 pt-5">
           <img src={Logo} alt="Logo" className="w-32 h-8" />
@@ -58,13 +59,13 @@ const Home = () => {
           <img src={Money} alt="Money" className="w-52 h-52 mx-auto" />
         </div>
 
+        {/* Objetivo - Mobile */}
         <div className="mt-12 px-6 text-center">
           <h2 className="text-[#1a2e45] text-2xl font-bold mb-4">Objetivo</h2>
           <p className="text-[#1a2e45] text-sm max-w-xs mx-auto">
             Estimular hábitos financeiros saudáveis desde a infância por meio de um cofre inteligente que utiliza recursos tecnológicos para incentivar o planejamento, a economia e o consumo consciente.
           </p>
         </div>
-
         <div className="mt-12 flex justify-center">
           <img src={Carteira} alt="Carteira" className="w-52 h-52" />
         </div>
@@ -100,18 +101,20 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col items-center gap-4 mt-6">
-          <button onClick={() => navigate('/artigo')} className="w-full max-w-xs h-16 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg" >
-            NOSSOS ARTIGOS
-          </button>
-          <button onClick={() => navigate('/equipe')} className="w-full max-w-xs h-16 bg-white rounded-2xl text-[#1CB0F6] font-bold text-lg border border-[#1CB0F6]">
-            NOSSA EQUIPE
-          </button>
-        </div>
+            <button onClick={() => navigate('/artigo')} className="w-full max-w-xs h-16 bg-[#EC5C8F] rounded-2xl text-white font-bold text-lg" >
+              NOSSOS ARTIGOS
+            </button>
+            <button onClick={() => navigate('/equipe')} className="w-full max-w-xs h-16 bg-white rounded-2xl text-[#1CB0F6] font-bold text-lg border border-[#1CB0F6]">
+              NOSSA EQUIPE
+            </button>
+          </div>
         </div>
       </div>
 
+      {/* DESKTOP */}
       <div className="hidden md:block bg-[#F5F0E1] min-h-screen">
         
+        {/* Navbar */}
         <div className="flex justify-between items-center px-12 py-6 bg-[#F5F0E1]">
           <img src={Logo} alt="Logo" className="w-40 h-10 cursor-pointer" />
           
@@ -132,17 +135,17 @@ const Home = () => {
           </div>
         </div>
 
+        {/* Propaganda */}
         <div className="flex justify-center mt-8 relative">
           <div className="relative"style={{width: '90%',maxWidth: '1200px',height: '450px'}}>
             <img src={Propaganda2} alt="Propaganda2" className="w-full h-full object-contain rounded-xl" />
-            
             <button onClick={() => navigate('/passos')}className="absolute bg-[#F5C2C2] rounded-[33px] px-12 py-4"style={{borderRadius: '33px',right: '98px', bottom: '70px'}}>
               <span className="text-white font-bold text-lg">CONHEÇA AGORA!</span>
             </button>
-
           </div>
         </div>
 
+        {/* Diferencial */}
         <div className="bg-[#F5F0E1] py-20 px-12">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-[#1A2E45] text-4xl font-bold text-center mb-16">
@@ -156,7 +159,6 @@ const Home = () => {
                   promovendo o engajamento contínuo da criança no aprendizado financeiro de maneira prática e atrativa.
                 </p>
               </div>
-              
               <div className="flex justify-center">
                 <img src={Imagem2} alt="Imagem 2" className="w-72 h-72" />
               </div>
@@ -164,26 +166,45 @@ const Home = () => {
           </div>
         </div>
 
+        {/* Público Alvo */}
         <div className="bg-[#F5F0E1] py-20 px-12">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-[#1A2E45] text-4xl font-bold text-center mb-16">
               Público alvo
             </h2>
-            
             <div className="grid grid-cols-2 gap-12 items-center">
               <div className="flex justify-center mt-16"> 
                 <img src={Money} alt="Money" className="w-72 h-72" />
               </div>
-              
               <div>
                 <p className="text-[#1A2E45] text-lg leading-relaxed">
-                  Crianças entre 5 and 10 anos em fase de alfabetização financeira, além de pais e responsáveis que desejam introduzir noções de valor do dinheiro, metas and responsabilidade financeira de forma acessível, segura e divertida.
+                  Crianças entre 5 e 10 anos em fase de alfabetização financeira, além de pais e responsáveis que desejam introduzir noções de valor do dinheiro, metas and responsabilidade financeira de forma acessível, segura e divertida.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Objetivo */}
+        <div className="bg-[#F5F0E1] py-20 px-12">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-[#1A2E45] text-4xl font-bold text-center mb-16">
+              Objetivo
+            </h2>
+            <div className="grid grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-[#1A2E45] text-lg leading-relaxed">
+                  Estimular hábitos financeiros saudáveis desde a infância por meio de um cofre inteligente que utiliza recursos tecnológicos para incentivar o planejamento, a economia e o consumo consciente.
+                </p>
+              </div>
+              <div className="flex justify-center">
+                <img src={Carteira} alt="Carteira" className="w-72 h-72" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Rodapé */}
         <div className="bg-[#f4d9d1] rounded-t-3xl py-12 px-8 mx-auto max-w-4xl"> 
           <div className="text-center">
             <h2 className="text-[#1A2E45] text-3xl font-bold mb-4"> 
@@ -197,7 +218,7 @@ const Home = () => {
               <img src={Certificado} alt="Certificado" className="w-40 h-14 mx-auto mb-3" />
               <p className="text-[#1A2E45] text-sm">
                 O programa kidSAFE Seal certifica a segurança de sites, aplicativos e produtos interativos voltados para crianças, garantindo que atendam a padrões independentes de segurança infantil.
-            </p>
+              </p>
             </div>
 
             <div className="flex justify-center gap-4">

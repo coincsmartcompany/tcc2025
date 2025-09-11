@@ -22,6 +22,7 @@ const ArtigoPage = () => {
     <div className="bg-[#F5F0E1] min-h-screen w-full px-4 pt-6 relative">
      
       <div className="md:hidden">
+        {/* Código mobile permanece inalterado */}
         <div className="absolute top-[21px] left-[25px]">
           <img src={Logo1} alt="Logo" className="w-[123px] h-[30px] cursor-pointer" onClick={() => navigate('/')} />
         </div>
@@ -83,6 +84,8 @@ const ArtigoPage = () => {
               
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center pt-8">
                 <h3 className="text-base font-bold text-[#1a2e45] mb-4 text-center leading-tight mt-2">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+                {/* Linha divisória modificada */}
+                <hr className="border-black border-1 mb-4 w-full" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm mt-2">
                   <li>A educação financeira na infância desenvolve responsabilidade e consciência no uso o dinheiro ao longo da vida.</li>
                   <li>Família e escola são os principais agentes no processo de ensino e representam as hábitas financeiras saudáveis desde cedo.</li>
@@ -99,6 +102,8 @@ const ArtigoPage = () => {
               
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center pt-8">
                 <h3 className="text-base font-bold text-[#1a2e45] mb-4 text-center leading-tight mt-2">EDUCAÇÃO FINANCEIRA COMO PRÁTICA PEDAGÓGICA</h3>
+                {/* Linha divisória modificada */}
+                <hr className="border-black border-1 mb-4 w-full" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm mt-2">
                   <li>A educação financeira nas escolas forma cidadãos mais conscientes e preparados para lidar com o dinheiro em diferentes contextos da vida.</li>
                   <li>O professor tem um papel fundamental na aplicação de métodos financeiros no ambiente escolar, contribuindo para a formação integral dos estudantes.</li>
@@ -115,6 +120,8 @@ const ArtigoPage = () => {
             
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center pt-8">
                 <h3 className="text-base font-bold text-[#1a2e45] mb-4 text-center leading-tight mt-2">EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+                {/* Linha divisória modificada */}
+                <hr className="border-black border-1 mb-4 w-full" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm mt-2">
                   <li>A educação financeira infantil é importante para orientar as crianças a gerenciar dinheiro de forma correta, desenvolvendo hábitos financeiros desde cedo.</li>
                   <li>O artigo explica os desafios de implementar esse ensino nas escolas e as estratégias para torná-lo mais eficaz e acessível às crianças.</li>
@@ -131,6 +138,8 @@ const ArtigoPage = () => {
       
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center pt-10">
                 <h3 className="text-base font-bold text-[#1a2e45] mb-4 text-center leading-tight mt-4">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA</h3>
+                {/* Linha divisória modificada */}
+                <hr className="border-black border-1 mb-4 w-full" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm mt-4">
                   <li>O artigo destaca a importância da educação financeira para o desenvolvimento de habilidades que ajudam a tomar decisões conscientes e com responsabilidade.</li>
                   <li>Ele discute como a educação financeira contribui para uma sociedade mais informada e capaz de enfrentar desafios económicos pessoais e coletivos.</li>
@@ -153,7 +162,7 @@ const ArtigoPage = () => {
               <span className="text-white text-lg font-medium">Passo a passo</span>
             </div>
 
-            <div className="flex items-center gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/produtos')}>
+            <div className="flex itemsCenter gap-4 cursor-pointer py-3 hover:bg-[#2a4365] rounded-lg px-4 transition-colors" onClick={() => navigate('/produtos')}>
               <img src={Informacao} alt="Produtos" className="w-6 h-6" />
               <span className="text-white text-lg font-medium">Produtos</span>
             </div>
@@ -189,6 +198,8 @@ const ArtigoPage = () => {
               
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center">
                 <h3 className="text-lg font-bold text-[#1a2e45] mb-4 text-center">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+                {/* Linha divisória aumentada lateralmente */}
+                <hr className="border-black border-1 mb-4 mx-[-1.5rem]" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm">
                   <li>A educação financeira na infância desenvolve responsabilidade and consciência no uso do dinheiro ao longo da vida.</li>
                   <li>Família e escola são os principais agentes no processo de ensino e representam as hábitas financeiras saudáveis desde cedo.</li>
@@ -205,6 +216,8 @@ const ArtigoPage = () => {
               
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center">
                 <h3 className="text-lg font-bold text-[#1a2e45] mb-4 text-center">EDUCAÇÃO FINANCEIRA COMO PRÁTICA PEDAGÓGICA</h3>
+                {/* Linha divisória aumentada lateralmente */}
+                <hr className="border-black border-1 mb-4 mx-[-1.5rem]" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm">
                   <li>A educação financeira nas escolas forma cidadãos mais conscientes e preparados para lidar dengan o dinheiro em diferentes contextos da vida.</li>
                   <li>O professor tem um papel fundamental na aplicação de métodos financeiros no ambiente escolar, contribuindo para a formação integral dos estudantes.</li>
@@ -220,7 +233,9 @@ const ArtigoPage = () => {
               </div>
  
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center">
-                <h3 className="text-lg font-bold text-[#1a2e45] mb-4 text-center">EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+                <h3 className="text-lg font-bold text-[#1a2e45] mb-4 text-center leading-tight mt-10">EDUCAÇÃO FINANCEIRA INFANTIL</h3>
+                {/* Linha divisória aumentada lateralmente */}
+                <hr className="border-black border-1 mb-4 mx-[-1.5rem]" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm">
                   <li>A educação financeira infantil é importante para orientar as crianças a gerenciar dinheiro de forma correta, desenvolvendo hábitos financeiros desde cedo.</li>
                   <li>O artigo explica os desafios de implementar esse ensino nas escolas e as estratégias para torná-lo mais eficaz e acessível às crianças.</li>
@@ -235,7 +250,10 @@ const ArtigoPage = () => {
               </div>
               
               <div className="bg-transparent border-4 border-[#EC5C8F] rounded-[20px] p-6 h-full flex flex-col justify-center">
-                <h3 className="text-lg font-bold text-[#1a2e45] mb-4 text-center">A IMPORTÂNCIA DA EDUCAÇÃO FINANCEIRA</h3>
+                {/* Texto ajustado para ficar na mesma linha e com mais espaço no topo */}
+                <h3 className="text-lg font-bold text-[#1a2e45] mb-4 text-center leading-tight mt-9">A IMPORTÂNCIA DA<br />EDUCAÇÃO FINANCEIRA</h3>
+                {/* Linha divisória aumentada lateralmente */}
+                <hr className="border-black border-1 mb-4 mx-[-1.5rem]" />
                 <ul className="list-disc list-inside text-[#1a2e45] space-y-2 pl-4 text-sm">
                   <li>O artigo destaca a importância da educação financeira para o desenvolvimento de habilidades que ajudam a tomar decisões conscientes e com responsabilidade.</li>
                   <li>Ele discute como a educação financeira contribui para uma sociedade more informada e capaz de enfrentar desafios económicos pessoais e coletivos.</li>
