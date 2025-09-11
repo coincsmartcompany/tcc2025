@@ -82,7 +82,7 @@ const Passos = () => {
             </div>
 
             <div className="text-center mx-4 mt-8">
-              <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 1</h3>
+              <em className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 1</em>
               <h4 className="text-[#1a2e45] text-base mb-3">Ligue seu porquinho!</h4>
               <p className="text-[#1a2e45] text-[12px] font-normal max-w-[280px] mx-auto">
                 Encontre o botão lateral e pressione para ligar o dispositivo. Pronto, seu porquinho já está acordado e pronto para ajudar você a economizar!
@@ -97,7 +97,7 @@ const Passos = () => {
             </div>
 
             <div className="text-center mx-4 mt-8">
-              <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 2</h3>
+              <em className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 2</em>
               <h4 className="text-[#1a2e45] text-base mb-3">Conecte e cadastra-se</h4>
               <p className="text-[#1a2e45] text-[12px] font-normal max-w-[280px] mx-auto">
                 Ative o Bluetooth do seu celular, conecte ao porquinho e faça o cadastro no aplicativo. Em poucos toques, você já pode começar a usar.
@@ -112,7 +112,7 @@ const Passos = () => {
             </div>
 
             <div className="text-center mx-4 mt-8">
-              <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 3</h3>
+              <em className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 3</em>
               <h4 className="text-[#1a2e45] text-base mb-3">Deposite seu dinheiro</h4>
               <p className="text-[#1a2e45] text-[12px] font-normal max-w-[280px] mx-auto">
                 Coloque o dinheiro na abertura superior do porquinho. Elle vai guardar tudinho com segurança!
@@ -126,7 +126,7 @@ const Passos = () => {
               <img src={Imagem4} alt="Passo 4" className="w-[200px] h-[200px] rounded-tl-[20px] rounded-tr-[50px] rounded-br-[20px] rounded-bl-[20px] relative z-10 mt-[-15px] ml-[25px]" />
             </div>
             <div className="text-center mx-4 mt-8">
-              <h3 className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 4</h3>
+              <em className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 4</em>
               <h4 className="text-[#1a2e45] text-base mb-3">Quer retirar o dinheiro?</h4>
               <p className="text-[#1a2e45] text-[12px] font-normal max-w-[280px] mx-auto">
                 É só abrir o compartimento que fica na partede baixo. Mas lembre-se: economizar também é um superpoder!
