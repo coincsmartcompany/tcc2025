@@ -115,7 +115,7 @@ const Passos = () => {
               <em className="text-[#EC5C8F] text-lg mb-3 font-bold">PASSO 3</em>
               <h4 className="text-[#1a2e45] text-base mb-3">Deposite seu dinheiro</h4>
               <p className="text-[#1a2e45] text-[12px] font-normal max-w-[280px] mx-auto">
-                Coloque o dinheiro na abertura superior do porquinho. Elle vai guardar tudinho com segurança!
+                Coloque o dinheiro na abertura superior do porquinho. Ele vai guardar tudinho com segurança!
               </p>
             </div>
           </div>
@@ -225,7 +225,7 @@ const Passos = () => {
                 <i className="text-[#EC5C8F] text-3xl font-extrabold mb-6">PASSO 3</i>
                 <h4 className="text-[#1a2e45] text-2xl mb-6">Deposite seu dinheiro</h4>
                 <p className="text-[#1a2e45] text-xl leading-relaxed">
-                  Coloque o dinheiro na abertura superior do porquinho. Elle vai guardar tudinho com segurança!
+                  Coloque o dinheiro na abertura superior do porquinho. Ele vai guardar tudinho com segurança!
                 </p>
               </div>
             </div>

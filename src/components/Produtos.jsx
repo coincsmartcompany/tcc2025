@@ -109,7 +109,6 @@ const Produtos = () => {
             Encontre o botão lateral e pressione para ligar o dispositivo.
             Pronto, seu porquinho já está acordado e pronto para ajudar você a economizar!
           </p>
-          <hr className="border-[#1a2e45] mt-3" />
         </div>
 
         {/* Linha antes do grid Mobile */}
