@@ -20,7 +20,7 @@ const Home = () => {
         <div className="flex justify-between items-center px-6 pt-5">
           <img src={Logo} alt="Logo" className="w-32 h-8" />
           <div className="flex items-center gap-3">
-            <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer" onClick={handleDarkModeClick}/>
+            <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer"/>
             <button onClick={() => navigate('/jogo')} className="px-4 py-2 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] text-sm font-bold">
               JOGUE AGORA!
             </button>
@@ -123,7 +123,7 @@ const Home = () => {
             </nav>
             
             <div className="flex items-center gap-4">
-              <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer" onClick={handleDarkModeClick}/>
+              <img src={DarkMode} alt="Dark Mode" className="w-[33px] h-[33px] cursor-pointer"/>
               <button onClick={() => navigate('/jogo')} className="px-6 py-3 bg-[#ec5c8f] rounded-2xl text-[#f5f0e1] font-bold hover:bg-[#D94A7C] transition-colors">
                 JOGUE AGORA!
               </button>
