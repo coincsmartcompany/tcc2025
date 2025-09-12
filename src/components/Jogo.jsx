@@ -388,7 +388,7 @@ const Jogo = () => {
                 <img 
                   src={Joystick} 
                   alt="Joystick" 
-                  className="absolute -top-10 -ml-10 left-1/2 transform -translate-x-1/2 w-[120px] h-auto"
+                  className="absolute -top-10 -ml-12 left-1/2 transform -translate-x-1/2 w-[120px] h-auto"
                 />
               </div>
             </div>
