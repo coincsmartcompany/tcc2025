@@ -315,18 +315,18 @@ const Jogo = () => {
         {/* Segunda seção com fundo azul (após a imagem) */}
         <div className="w-full bg-[#72B8C3] flex flex-col items-center py-16">
           <div className="w-full max-w-6xl px-6">
-            {/* Quadrado cinza maior (270x1069) */}
-            <div className="w-[555px] h-[369px] bg-[#D9D9D9] rounded-lg shadow-md mb-16 flex items-center justify-center mx-auto">
+            {/* Quadrado cinza maior (555x369) com radius aumentado */}
+            <div className="w-[555px] h-[369px] bg-[#D9D9D9] rounded-2xl shadow-md mb-16 flex items-center justify-center mx-auto">
               {/* Ícone de play do YouTube */}
               <div className="w-[70px] h-[70px] bg-[#6b6b6b] rounded-full flex items-center justify-center">
                 <div className="w-0 h-0 border-t-[15px] border-t-transparent border-l-[25px] border-l-white border-b-[15px] border-b-transparent ml-1"></div>
               </div>
             </div>
             
-            {/* Texto "Cada Corrida..." com tamanho 32 e margem aumentada abaixo */}
+            {/* Texto "Cada Corrida..." com quebra de linha personalizada */}
             <div className="w-full px-4 mb-24">
               <h3 className="text-[32px] font-nunito font-extrabold text-[#F5F0E1] text-center leading-tight">
-                Cada Corrida Ensina, Cada Moeda Educa e Cada Escolha Constrói o Futuro
+                Cada Corrida Ensina, Cada Moeda Educa e <br />Cada Escolha Constrói o Futuro
               </h3>
             </div>
 
@@ -394,7 +394,7 @@ const Jogo = () => {
             </div>
 
             {/* Parte inferior - Imagem à esquerda, texto e botão à direita */}
-            <div className="flex items-start gap-16 mt-16">
+            <div className="flex items-start gap-16 mt-16 ml-34">
               {/* Container para a imagem final com o quadrado personalizado atrás (lado esquerdo) */}
               <div className="relative flex-shrink-0">
                 <div className="absolute w-[305px] h-[305px] bg-[#F5F0E1] z-0" style={{borderTopLeftRadius: '90px', borderTopRightRadius: '35px', borderBottomLeftRadius: '35px', borderBottomRightRadius: '130px', transform: 'translate(20px, 20px)'}}></div>
@@ -408,7 +408,7 @@ const Jogo = () => {
               </div>
 
               {/* Conteúdo do lado direito - mais afastado */}
-              <div className="flex flex-col ml-12">
+              <div className="flex flex-col ml-20">
                 {/* Texto "Para ver mais e jogar / Clique Aqui!" */}
                 <div className="flex flex-col items-start mb-10">
                   <p className="text-[24px] font-nunito font-bold text-white leading-tight mb-2">
