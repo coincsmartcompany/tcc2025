@@ -12,10 +12,6 @@ import DarkMode from '../assets/dark-mode.png';
 const ArtigoPage = () => {
   const navigate = useNavigate();
 
-  const handleDarkModeClick = () => {
-    navigate('/artigodark')
-  };
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

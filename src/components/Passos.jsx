@@ -17,10 +17,6 @@ import Sol from '../assets/sol.png';
 const Passos = () => {
   const navigate = useNavigate();
 
-  const handleDarkModeClick = () => {
-    navigate('/passosdark');
-  };
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

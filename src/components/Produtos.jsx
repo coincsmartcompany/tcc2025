@@ -22,9 +22,7 @@ import img4 from '../assets/img4.png';
 
 const Produtos = () => {
   const navigate = useNavigate();
-  const handleDarkModeClick = () => {
-    navigate('/produtosdark');
-  };
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

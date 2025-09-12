@@ -19,10 +19,6 @@ import DarkMode from '../assets/dark-mode.png';
 const Equipe = () => {
   const navigate = useNavigate();
 
-  const handleLightModeClick = () => {
-    navigate('/equipedark');
-  };
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const membros = [

@@ -12,10 +12,6 @@ import DarkMode from '../assets/dark-mode.png';
 const Home = () => {
   const navigate = useNavigate();
 
-  const handleDarkModeClick = () => {
-    navigate('/dark');
-  };
-
   return (
     <div className="relative bg-[#F5F0E1] w-full min-h-screen">
       
